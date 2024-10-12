@@ -118,11 +118,16 @@ form button:hover {
     overflow-wrap: break-word;
     hyphens: auto;
   }
+
   .cv {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0 1em;
   }
+
+  .cv h1 {
+    margin-top: 0;
+  }  
   
   .cv h2 {
     border-bottom: 2px solid var(--color-accent);
