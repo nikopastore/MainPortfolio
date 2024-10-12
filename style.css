@@ -1,8 +1,8 @@
-:root {
-    --color-accent: #1100ff;
-  }
 body {
     font: 100%/1.5 system-ui;
+  }
+:root {
+    --color-accent: #1100ff;
   }
 nav ul {
     list-style-type: none;
