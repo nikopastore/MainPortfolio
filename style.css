@@ -8,10 +8,29 @@ body {
 :root {
     --color-accent: #1100ff;
 }
+:root {
+  color-scheme: light dark;
+}
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
+
+.color-scheme select {
+  font: inherit;
+}
+
 
 nav {
     margin-bottom: 1em;
     border-bottom: 1px solid #ccc;
+}
+nav {
+  --border-color: oklch(50% 10% 200 / 40%);
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav {
