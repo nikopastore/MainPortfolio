@@ -10,7 +10,7 @@ let pages = [
   { url: 'projects/', title: 'Projects' },
   { url: 'contact/', title: 'Contact' },
   { url: 'cv/', title: 'CV' },
-  { url: 'https://github.com/YOUR_USERNAME', title: 'GitHub Profile' },
+  { url: 'https://github.com/nikopastore', title: 'GitHub Profile' },
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains('home');

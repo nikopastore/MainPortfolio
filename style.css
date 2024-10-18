@@ -14,6 +14,27 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5em;
+}
+
+nav a.current {
+  border-bottom: 0.4em solid var(--color-accent);
+}
+
+nav a:hover {
+  background-color: rgba(138, 111, 255, 0.1);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
