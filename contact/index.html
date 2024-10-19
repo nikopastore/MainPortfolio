@@ -9,17 +9,21 @@
 <body>
 
     <h1>Contact</h1>
-    <form action="mailto:your.email@example.com" method="GET">
-      <label>
-        Subject:
-        <input name="subject" />
-      </label>
-      <label>
-        Message:
-        <textarea name="body"></textarea>
-      </label>
-      <button type="submit">Send Message</button>
-    </form>
+    <form action="mailto:npastore@ucsd.edu" method="POST" enctype="text/plain">
+        <label>
+            <span>Your Email:</span>
+            <input type="email" name="email" value="" />
+          </label>
+          <label>
+            <span>Subject:</span>
+            <input name="subject" value="" />
+          </label>
+          <label>
+            <span>Message:</span>
+            <textarea name="body"></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
 
 </body>
 <script src="../global.js" type="module"></script>

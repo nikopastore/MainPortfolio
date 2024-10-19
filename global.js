@@ -74,7 +74,6 @@ if ('colorScheme' in localStorage) {
 
 let form = document.querySelector('form');
 
-
 if (form) {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -90,6 +89,7 @@ if (form) {
     }
 
     mailto += params.join('&');
+    console.log('mailto URL:', mailto);
 
     location.href = mailto;
   });
