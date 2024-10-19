@@ -72,3 +72,25 @@ if ('colorScheme' in localStorage) {
   setColorScheme(localStorage.colorScheme);
 }
 
+let form = document.querySelector('form');
+
+
+if (form) {
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    let data = new FormData(form);
+
+    let mailto = form.action + '?';
+
+    let params = [];
+
+    for (let [name, value] of data) {
+      params.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
+    }
+
+    mailto += params.join('&');
+
+    location.href = mailto;
+  });
+}
